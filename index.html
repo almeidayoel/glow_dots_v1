@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glow Dot Grid</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section id="info-panel" class="panel" aria-label="project intro">
+        <div class="panel-header">
+          <div class="panel-copy">
+            <p class="eyebrow">interactive canvas</p>
+            <h1>Hover the dots</h1>
+            <p>Each point lights up as your cursor moves across the field.</p>
+            <div class="color-selector">
+              <label for="scheme-select">Glow color:</label>
+              <div class="scheme-buttons">
+                <button type="button" class="scheme-btn" data-scheme="cyan" aria-label="Cyan scheme" title="Cyan"></button>
+                <button type="button" class="scheme-btn" data-scheme="purple" aria-label="Purple scheme" title="Purple"></button>
+                <button type="button" class="scheme-btn" data-scheme="amber" aria-label="Amber scheme" title="Amber"></button>
+                <button type="button" class="scheme-btn" data-scheme="emerald" aria-label="Emerald scheme" title="Emerald"></button>
+              </div>
+            </div>
+            <div class="color-selector">
+              <label for="base-select">Base dot color:</label>
+              <div class="base-buttons">
+                <button type="button" class="base-btn" data-base="white" aria-label="White dots" title="White"></button>
+                <button type="button" class="base-btn" data-base="gray" aria-label="Gray dots" title="Gray"></button>
+                <button type="button" class="base-btn" data-base="dark" aria-label="Dark dots" title="Dark"></button>
+                <button type="button" class="base-btn" data-base="blue" aria-label="Blue dots" title="Blue"></button>
+              </div>
+            </div>
+            <button id="reset-btn" class="reset-btn" type="button" aria-label="Reset to defaults">Reset to defaults</button>
+          </div>
+          <button id="panel-toggle" class="panel-toggle" type="button" aria-expanded="true" aria-controls="info-panel" aria-label="Hide panel">−</button>
+        </div>
+      </section>
+      <button id="panel-reveal" class="panel-reveal" type="button" aria-controls="info-panel" aria-label="Show panel">+</button>
+      <div id="stage" aria-label="glowing dot grid"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
